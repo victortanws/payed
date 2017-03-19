@@ -1,6 +1,10 @@
 class User < ApplicationRecord
   # Direct associations
 
+  has_many   :my_debts,
+             :foreign_key => "initiator_id",
+             :dependent => :destroy
+
   has_many   :comments,
              :dependent => :destroy
 
