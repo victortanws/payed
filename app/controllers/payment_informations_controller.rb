@@ -50,8 +50,6 @@ class PaymentInformationsController < ApplicationController
 
   def update
     @payment_information = PaymentInformation.find(params[:id])
-
-    @payment_information.user_id = params[:user_id]
     @payment_information.cardholder_name = params[:cardholder_name]
     @payment_information.card_number = params[:card_number]
     @payment_information.card_type = params[:card_type]
