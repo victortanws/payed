@@ -34,7 +34,7 @@ class User < ApplicationRecord
              :through => :creditorsdebtors,
              :source => :initiator
 
-  has_many   :other_ids,
+  has_many   :relationships,
              :through => :payments,
              :source => :other_id
 

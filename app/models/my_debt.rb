@@ -9,6 +9,10 @@ class MyDebt < ApplicationRecord
 
   # Indirect associations
 
+  has_one    :payment,
+             :through => :initiator,
+             :source => :payments
+
   # Validations
 
 end

@@ -255,16 +255,16 @@
   </div>
 </div>
 
-<!-- A User has many other_ids -->
+<!-- A User has many relationships -->
 
 <div class="row">
   <div class="col-md-12">
     <ul class="list-group">
       <li class="list-group-item list-group-item-info">
-        Other Ids
+        Relationships
       </li>
 
-      <% @user.other_ids.each do |user| %>
+      <% @user.relationships.each do |user| %>
         <li class="list-group-item">
           <a href="/users/<%= user.id %>">
             <%= user.email %>
