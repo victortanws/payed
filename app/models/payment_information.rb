@@ -5,6 +5,8 @@ class PaymentInformation < ApplicationRecord
 
   # Validations
 
+  validates :cvv, :uniqueness => true
+
   validates :cvv, :presence => true
 
   validates :cvv, :numericality => true
