@@ -1,5 +1,7 @@
 ActiveAdmin.register MyDebt do
 
+ permit_params :initiator_id, :receiver_id, :current_amount
+
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
 #
